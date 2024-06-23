@@ -1,0 +1,33 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color ic_launcher_background
+color white
+color yellow
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+drawable lagarto
+drawable padrao
+drawable papel
+drawable pedra
+drawable spok
+drawable tesoura
+id image_app
+id image_escolha1
+id image_escolha2
+id image_escolha3
+id image_largato
+id image_spok
+id main
+id resultadoText
+id textEscolhadoApp
+id textEscolhadoUser
+layout activity_main
+mipmap ic_launcher
+mipmap ic_launcher_foreground
+mipmap ic_launcher_round
+string app_name
+style Base.Theme.PedraPapelTesoura
+style Theme.PedraPapelTesoura
+xml backup_rules
+xml data_extraction_rules

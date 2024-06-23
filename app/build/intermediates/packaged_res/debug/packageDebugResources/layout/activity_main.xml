@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/yellow"
+    >
+
+    <TextView
+        android:id="@+id/textEscolhadoApp"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="32sp"
+        android:text="Escolha do App"
+        android:textSize="23sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+    </TextView>
+
+    <ImageView
+        android:id="@+id/image_app"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="32sp"
+        android:src="@drawable/padrao"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textEscolhadoApp">
+
+    </ImageView>
+
+
+    <TextView
+        android:id="@+id/textEscolhadoUser"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="64dp"
+        android:text="Sua escolha"
+        android:textSize="23sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_app">
+
+
+    </TextView>
+
+
+    <ImageView
+        android:id="@+id/image_escolha1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        android:onClick="selecionarPedra"
+        android:src="@drawable/pedra"
+        app:layout_constraintEnd_toStartOf="@+id/image_escolha2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textEscolhadoUser">
+
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/image_escolha2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+
+        android:onClick="selecionarPapel"
+        android:src="@drawable/papel"
+        app:layout_constraintEnd_toStartOf="@+id/image_escolha3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/image_escolha1"
+        app:layout_constraintTop_toBottomOf="@+id/textEscolhadoUser">
+
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/image_escolha3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        android:onClick="selecionarTesoura"
+        android:src="@drawable/tesoura"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/image_escolha2"
+        app:layout_constraintTop_toBottomOf="@+id/textEscolhadoUser">
+
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/image_largato"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        android:onClick="selecionarLargato"
+        android:src="@drawable/lagarto"
+        app:layout_constraintEnd_toStartOf="@+id/image_spok"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_escolha2">
+
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/image_spok"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        android:onClick="selecionarSpock"
+        android:src="@drawable/spok"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/image_largato"
+        app:layout_constraintTop_toBottomOf="@+id/image_escolha3">
+
+    </ImageView>
+
+
+    <TextView
+        android:id="@+id/resultadoText"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="64dp"
+        android:text="Resultado"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_largato">
+
+
+    </TextView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
